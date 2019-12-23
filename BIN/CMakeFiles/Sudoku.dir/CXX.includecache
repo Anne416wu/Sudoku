@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/apple/hello_world/Sudoku/generator.cpp
+generator.h
+/Users/apple/hello_world/Sudoku/generator.h
+
+/Users/apple/hello_world/Sudoku/generator.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+string.h
+-
+algorithm
+-
+time.h
+-
+
+/Users/apple/hello_world/Sudoku/main.cpp
+generator.h
+/Users/apple/hello_world/Sudoku/generator.h
+iostream
+-
+
