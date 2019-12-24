@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Pl
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/apple/hello_world/Sudoku/googletest/include -I/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest 
 

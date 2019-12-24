@@ -94,6 +94,9 @@ Unit_EXTERNAL_OBJECTS =
 Unit: CMakeFiles/Unit.dir/test.cpp.o
 Unit: CMakeFiles/Unit.dir/generator.cpp.o
 Unit: CMakeFiles/Unit.dir/build.make
+Unit: lib/libgtest.a
+Unit: lib/libgtest_main.a
+Unit: lib/libgtest.a
 Unit: CMakeFiles/Unit.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Unit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Unit.dir/link.txt --verbose=$(VERBOSE)

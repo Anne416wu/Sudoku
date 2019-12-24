@@ -11,10 +11,15 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  ".././Users/apple/hello_world/Sudoku/googletest"
+  "../googletest/include"
+  "../googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/apple/hello_world/Sudoku/BIN/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/Users/apple/hello_world/Sudoku/BIN/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

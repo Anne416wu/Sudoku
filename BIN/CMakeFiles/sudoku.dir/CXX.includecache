@@ -6,29 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/apple/hello_world/Sudoku/generator.cpp
-generator.h
-/Users/apple/hello_world/Sudoku/generator.h
-
-/Users/apple/hello_world/Sudoku/generator.h
-cstdio
--
-cstdlib
--
-cmath
--
-cstring
--
-algorithm
--
-ctime
--
-random
--
-iostream
--
-
-/Users/apple/hello_world/Sudoku/main.cpp
-generator.h
-/Users/apple/hello_world/Sudoku/generator.h
-

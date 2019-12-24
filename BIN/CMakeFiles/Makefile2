@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /Users/apple/hello_world/Sudoku/BIN
 all: CMakeFiles/Unit.dir/all
 all: CMakeFiles/before.dir/all
 all: CMakeFiles/sudoku.dir/all
+all: googletest/all
 
 .PHONY : all
 
@@ -63,11 +64,12 @@ all: CMakeFiles/sudoku.dir/all
 clean: CMakeFiles/Unit.dir/clean
 clean: CMakeFiles/before.dir/clean
 clean: CMakeFiles/sudoku.dir/clean
+clean: googletest/clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: googletest/preinstall
 
 .PHONY : preinstall
 
@@ -75,7 +77,8 @@ preinstall:
 # Target rules for target CMakeFiles/Unit.dir
 
 # All Build rule for target.
-CMakeFiles/Unit.dir/all:
+CMakeFiles/Unit.dir/all: googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/Unit.dir/all: googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/depend
 	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=1,2,3 "Built target Unit"
@@ -83,7 +86,7 @@ CMakeFiles/Unit.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Unit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Unit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 0
 .PHONY : CMakeFiles/Unit.dir/rule
@@ -132,7 +135,7 @@ CMakeFiles/before.dir/clean:
 CMakeFiles/sudoku.dir/all:
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=7,8,9 "Built target sudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=11,12,13 "Built target sudoku"
 .PHONY : CMakeFiles/sudoku.dir/all
 
 # Build rule for subdir invocation for target.
@@ -151,6 +154,80 @@ sudoku: CMakeFiles/sudoku.dir/rule
 CMakeFiles/sudoku.dir/clean:
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/clean
 .PHONY : CMakeFiles/sudoku.dir/clean
+
+#=============================================================================
+# Directory level rules for directory googletest
+
+# Recursive "all" directory target.
+googletest/all: googletest/CMakeFiles/gtest_main.dir/all
+googletest/all: googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : googletest/all
+
+# Recursive "clean" directory target.
+googletest/clean: googletest/CMakeFiles/gtest_main.dir/clean
+googletest/clean: googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : googletest/clean
+
+# Recursive "preinstall" directory target.
+googletest/preinstall:
+
+.PHONY : googletest/preinstall
+
+#=============================================================================
+# Target rules for target googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest/CMakeFiles/gtest_main.dir/all: googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+.PHONY : googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 0
+.PHONY : googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=7,8 "Built target gtest"
+.PHONY : googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 0
+.PHONY : googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
