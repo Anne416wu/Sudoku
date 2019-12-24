@@ -1,4 +1,6 @@
-//使用DFS不剪枝
+////空格加入计算
+////3.3-4s
+////fputs 将数独装换成一个长的字符串
 
 #include"../src/generator.h"
 #include<iostream>
@@ -39,6 +41,34 @@ int check(int m, int n)
     return 1;
 }
 
+void prune(int i, int j, bool point[10])
+{
+    for (int k = 0; k < 18; k+=2)//行排除
+    {
+        if (ques_board[i][k] != '0'&&k != j)point[ques_board[i][k] - '0'] = true;
+    }
+    for (int k = 0; k < 9; k++)//列排除
+    {
+        if (ques_board[k][j] != '0'&&k != i)point[ques_board[k][j] - '0'] = true;
+    }
+    int m = 0, n = 0;
+    if (i / 3 == 0)m = 0;
+    else if (i / 3 == 1)m = 3;
+    else if (i / 3 == 2)m = 6;
+
+    if (j / 6 == 0)n = 0;
+    else if (j / 6 == 1)n = 6;
+    else if (j / 6 == 2)n = 12;
+
+    for (int c = m; c < m + 3; c++)
+    {
+        for (int d = n; d < n + 6; d+=2)
+        {
+            if(c!=i&&d!=j&&ques_board[c][d]!='0')point[ques_board[c][d] - '0'] = true;
+        }
+    }
+}
+
 
 void settle(int pos)
 {
@@ -51,11 +81,13 @@ void settle(int pos)
     i = pos / 18;
     j = pos % 18;
 
+    bool point[10] = { false };
 
     if (ques_board[i][j] == '0')
     {
         for (k = 1; k <= 9; k++)
         {
+            if (point[k])continue;
             ques_board[i][j] = k + '0';
             if (check(i, j))
             {
@@ -105,6 +137,7 @@ void settle_ques()
         settle(0);
         end = clock();
         total += end - begin;
+        cout<<total<<endl;
         //freopen(SOLUTIONPATH, "w", stdout);
         strSolution[0] = '\0';
         for (int i = 0; i < 9; i++)

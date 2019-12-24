@@ -86,6 +86,7 @@ void ques_generate(int ques_num){
     FILE *fpQues1;
     FILE *fpBase1;
     char str[200];
+    int num = 0;
 
     fpBase1 = fopen(SUDOKUPATH, "r");
     fpQues1 = fopen(QUESPATH, "w");
@@ -95,8 +96,11 @@ void ques_generate(int ques_num){
         str[0] = '\0';
         for (int i = 0; i < 9; i++){
             fgets(ques_board[i], 20, fpBase1);
-        }fgetc(fpBase1);
-
+        }
+        if(fgetc(fpBase1) == -1){
+            cout << "There is only "<<num<<" puzzles in sudoku.txt"<<endl;
+            break;
+        }
         //int base[9] = { 0,3,6,27,30,33,54,57,60 };
         int base[9] = { 0,6,12,54,60,66,108,114,120 };
         //int plus[9] = { 0,1,2,9,10,11,18,19,20 };

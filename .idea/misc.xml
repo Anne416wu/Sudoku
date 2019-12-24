@@ -5,9 +5,9 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/src" />
     </sourceRoots>
-    <excludeRoots>
+    <libraryRoots>
       <file path="$PROJECT_DIR$/googletest" />
-    </excludeRoots>
+    </libraryRoots>
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />

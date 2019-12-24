@@ -1,7 +1,6 @@
 #include"generator.h"
-
 using namespace std;
-
+static int settle_flag = 0;
 
 void prune(int i, int j, bool point[10]) {
     //行排除
@@ -26,48 +25,60 @@ void prune(int i, int j, bool point[10]) {
     }
 }
 
-
-void settle(int pos) {
-    if (pos == 162) {
+void settle(int pos){
+    if (pos == 162){
+        settle_flag = 1;
         return;
     }
     int i, j, k;
     i = pos / 18;
     j = pos % 18;
-    bool point[10] = {false};
-    if (ques_board[i][j] == '0') {
+    bool point[10] = { false };
+    if (ques_board[i][j] == '0'){
         prune(i, j, point);
-        for (k = 1; k <= 9; k++) {
-            if (point[k])
-                continue;
-            ques_board[i][j] = (char) ('0' + k);
+        for (k = 1; k <= 9; k++){
+            if (point[k])continue;
+            ques_board[i][j] = (char)(k + '0');
             settle(pos + 2);
+            if (settle_flag) { return; }
+            ques_board[i][j] = '0';
         }
-    } else {
+    }
+    else{
         settle(pos + 2);
     }
+    if (settle_flag) { return; }
 }
 
 
 void settle_ques() {
     int begin = 0, end = 0;
-    int total = 0, flag = 0;
+    int total = 0;
+    int num = 0;
     FILE *fpQues, *fpSolution;
     char strSolution[200];
-    if (AbsolutePath[0] == 0){
+    fpQues = fopen(AbsolutePath, "r");
+    if (fpQues == nullptr){
         fpQues = fopen(QUESPATH, "r");
-    }
-    else {
-        cout<< "out2" << AbsolutePath << endl;
-        fpQues = fopen(AbsolutePath, "r");
+        if (fpQues == nullptr){
+            cout<< "Question File does not exist. "
+                << "Use"
+                << "      sudoku -c number --> generate n sudoku finals. \n"
+                << "      sudoku -p number --> produce sudoku problem \n"
+                << endl;
+        }
+        else{
+            cout<< "File path input is not exist, will execute " << QUESPATH << endl;
+        }
     }
     fpSolution = fopen(SUDOKUPATH, "w");
     while (true) {
         for (int i = 0; i < 9; i++) {
             fgets(ques_board[i], 20, fpQues);
         }
-        flag = fgetc(fpQues);//读取中间的空行，判断是否文件尾
+        int flag = fgetc(fpQues);//读取中间的空行，判断是否文件尾
         begin = (int) clock();
+        settle_flag = 0;
         settle(0);
         end = (int) clock();
         total += end - begin;
@@ -75,7 +86,7 @@ void settle_ques() {
         for (int i = 0; i < 9; i++) {
             strcat(strSolution, ques_board[i]);
         }
-        if (flag == -1)
+        if (flag == EOF)
             strSolution[161] = '\0';
         else {
             strSolution[161] = '\n';
@@ -83,8 +94,13 @@ void settle_ques() {
             strSolution[163] = '\0';
         }
         fputs(strSolution, fpSolution);
-        if (flag == -1) break;
+        num++;
+        if (flag == EOF){
+            break;
+        }
     }
+    cout<<"Last puzzle's solution is"<<endl<<strSolution<<endl;
+    cout <<num<<" Puzzles "<< "solving time: " << total<<endl;
     fclose(fpQues);
     fclose(fpSolution);
 }
@@ -112,6 +128,7 @@ int main(int argc, char **argv) {
         cout << "Illegal parameter\n"
              << "The first parameter should be -c or -s or -p\n"
              << "-c means generating sudoku\n"
+             << "-p meas generating sudoku problem\n"
              << "-s meas solve the problem read from the file\n";
         return 1;
     }
