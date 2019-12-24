@@ -11,22 +11,24 @@ generator.h
 /Users/apple/hello_world/Sudoku/generator.h
 
 /Users/apple/hello_world/Sudoku/generator.h
-stdio.h
+cstdio
 -
-stdlib.h
+cstdlib
 -
-math.h
+cmath
 -
-string.h
+cstring
 -
 algorithm
 -
-time.h
+ctime
+-
+random
+-
+iostream
 -
 
 /Users/apple/hello_world/Sudoku/main.cpp
 generator.h
 /Users/apple/hello_world/Sudoku/generator.h
-iostream
--
 

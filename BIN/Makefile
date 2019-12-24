@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Unit
+
+# Build rule for target.
+Unit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Unit
+.PHONY : Unit
+
+# fast build rule for target.
+Unit/fast:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/build
+.PHONY : Unit/fast
+
+#=============================================================================
+# Target rules for targets named before
+
+# Build rule for target.
+before: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 before
+.PHONY : before
+
+# fast build rule for target.
+before/fast:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/build
+.PHONY : before/fast
+
+#=============================================================================
 # Target rules for targets named sudoku
 
 # Build rule for target.
@@ -129,6 +155,7 @@ generator.o: generator.cpp.o
 
 # target to build an object file
 generator.cpp.o:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.o
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.o
 .PHONY : generator.cpp.o
 
@@ -138,6 +165,7 @@ generator.i: generator.cpp.i
 
 # target to preprocess a source file
 generator.cpp.i:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.i
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.i
 .PHONY : generator.cpp.i
 
@@ -147,8 +175,36 @@ generator.s: generator.cpp.s
 
 # target to generate assembly for a file
 generator.cpp.s:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.s
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.s
 .PHONY : generator.cpp.s
+
+generator_origin.o: generator_origin.cpp.o
+
+.PHONY : generator_origin.o
+
+# target to build an object file
+generator_origin.cpp.o:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/generator_origin.cpp.o
+.PHONY : generator_origin.cpp.o
+
+generator_origin.i: generator_origin.cpp.i
+
+.PHONY : generator_origin.i
+
+# target to preprocess a source file
+generator_origin.cpp.i:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/generator_origin.cpp.i
+.PHONY : generator_origin.cpp.i
+
+generator_origin.s: generator_origin.cpp.s
+
+.PHONY : generator_origin.s
+
+# target to generate assembly for a file
+generator_origin.cpp.s:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/generator_origin.cpp.s
+.PHONY : generator_origin.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,6 +233,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+main_origin.o: main_origin.cpp.o
+
+.PHONY : main_origin.o
+
+# target to build an object file
+main_origin.cpp.o:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/main_origin.cpp.o
+.PHONY : main_origin.cpp.o
+
+main_origin.i: main_origin.cpp.i
+
+.PHONY : main_origin.i
+
+# target to preprocess a source file
+main_origin.cpp.i:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/main_origin.cpp.i
+.PHONY : main_origin.cpp.i
+
+main_origin.s: main_origin.cpp.s
+
+.PHONY : main_origin.s
+
+# target to generate assembly for a file
+main_origin.cpp.s:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/main_origin.cpp.s
+.PHONY : main_origin.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,13 +295,24 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Unit"
+	@echo "... before"
 	@echo "... sudoku"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
+	@echo "... generator_origin.o"
+	@echo "... generator_origin.i"
+	@echo "... generator_origin.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_origin.o"
+	@echo "... main_origin.i"
+	@echo "... main_origin.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

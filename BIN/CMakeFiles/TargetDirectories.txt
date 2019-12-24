@@ -1,3 +1,5 @@
 /Users/apple/hello_world/Sudoku/BIN/CMakeFiles/rebuild_cache.dir
 /Users/apple/hello_world/Sudoku/BIN/CMakeFiles/edit_cache.dir
+/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/Unit.dir
+/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/before.dir
 /Users/apple/hello_world/Sudoku/BIN/CMakeFiles/sudoku.dir

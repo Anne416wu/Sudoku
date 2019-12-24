@@ -53,11 +53,15 @@ CMAKE_BINARY_DIR = /Users/apple/hello_world/Sudoku/BIN
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Unit.dir/all
+all: CMakeFiles/before.dir/all
 all: CMakeFiles/sudoku.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Unit.dir/clean
+clean: CMakeFiles/before.dir/clean
 clean: CMakeFiles/sudoku.dir/clean
 
 .PHONY : clean
@@ -68,13 +72,67 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
+# Target rules for target CMakeFiles/Unit.dir
+
+# All Build rule for target.
+CMakeFiles/Unit.dir/all:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/depend
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=1,2,3 "Built target Unit"
+.PHONY : CMakeFiles/Unit.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Unit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Unit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 0
+.PHONY : CMakeFiles/Unit.dir/rule
+
+# Convenience name for target.
+Unit: CMakeFiles/Unit.dir/rule
+
+.PHONY : Unit
+
+# clean rule for target.
+CMakeFiles/Unit.dir/clean:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/clean
+.PHONY : CMakeFiles/Unit.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/before.dir
+
+# All Build rule for target.
+CMakeFiles/before.dir/all:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/depend
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=4,5,6 "Built target before"
+.PHONY : CMakeFiles/before.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/before.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/before.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apple/hello_world/Sudoku/BIN/CMakeFiles 0
+.PHONY : CMakeFiles/before.dir/rule
+
+# Convenience name for target.
+before: CMakeFiles/before.dir/rule
+
+.PHONY : before
+
+# clean rule for target.
+CMakeFiles/before.dir/clean:
+	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/clean
+.PHONY : CMakeFiles/before.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sudoku.dir
 
 # All Build rule for target.
 CMakeFiles/sudoku.dir/all:
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=1,2,3 "Built target sudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=7,8,9 "Built target sudoku"
 .PHONY : CMakeFiles/sudoku.dir/all
 
 # Build rule for subdir invocation for target.
