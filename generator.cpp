@@ -30,7 +30,6 @@ void sudoku_generate(int n){
     final[9][0] = '\n';//第10行只有一个空行
     final[9][1] = '\0';
 
-    //freopen(SUDOKUPATH, "w", stdout);
     FILE *fp = fopen(SUDOKUPATH, "w");
     //生成第一行
     do{
@@ -51,31 +50,22 @@ void sudoku_generate(int n){
                 flag++;
                 //前三行
                 for (k = 0; k < 3; k++){
-                    //fputs(final[k], fp);
-                    //strcat(str, final[k]);
                     strcpy(buf + bit, final[k]);
                     bit += 18;
                 }
                 //3 4 5行
                 for (k = 0; k < 3; k++){
-                    //fputs(final[pos1[i][k]], fp);
-                    //strcat(str, final[pos1[i][k]]);
                     strcpy(buf + bit, final[pos1[i][k]]);
                     bit += 18;
                 }
                 //6 7 8行
                 for (k = 0; k < 3; k++){
-                    //fputs(final[pos2[j][k]], fp);
-                    //strcat(str, final[pos2[j][k]]);
                     strcpy(buf + bit, final[pos2[j][k]]);
                     bit += 18;
                 }
-                //fputs(final[9], fp);//输出回车
-                //strcat(str, final[9]);
+
                 strcpy(buf + bit, "\n");
                 bit++;
-                //if (n == 1)str[161] = '\0';
-                //fputs(str, fp);
                 if (n == 1){
                     buf[163 * (cot - 1) + 161] = '\0';
                     fputs(buf, fp);
@@ -142,8 +132,6 @@ void ques_generate(int ques_num){
                 ques_board[i][j] = '0';
             else others++;
         }
-
-        //freopen(QUESPATH, "w", stdout);
         for (auto & i : ques_board){
             strcat(str, i);
         }
