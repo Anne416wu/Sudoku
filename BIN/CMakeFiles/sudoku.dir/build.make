@@ -57,42 +57,42 @@ include CMakeFiles/sudoku.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sudoku.dir/flags.make
 
-CMakeFiles/sudoku.dir/main.cpp.o: CMakeFiles/sudoku.dir/flags.make
-CMakeFiles/sudoku.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sudoku.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/main.cpp.o -c /Users/apple/hello_world/Sudoku/main.cpp
+CMakeFiles/sudoku.dir/src/main.cpp.o: CMakeFiles/sudoku.dir/flags.make
+CMakeFiles/sudoku.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sudoku.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/src/main.cpp.o -c /Users/apple/hello_world/Sudoku/src/main.cpp
 
-CMakeFiles/sudoku.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/main.cpp > CMakeFiles/sudoku.dir/main.cpp.i
+CMakeFiles/sudoku.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/src/main.cpp > CMakeFiles/sudoku.dir/src/main.cpp.i
 
-CMakeFiles/sudoku.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/main.cpp -o CMakeFiles/sudoku.dir/main.cpp.s
+CMakeFiles/sudoku.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/src/main.cpp -o CMakeFiles/sudoku.dir/src/main.cpp.s
 
-CMakeFiles/sudoku.dir/generator.cpp.o: CMakeFiles/sudoku.dir/flags.make
-CMakeFiles/sudoku.dir/generator.cpp.o: ../generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sudoku.dir/generator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/generator.cpp.o -c /Users/apple/hello_world/Sudoku/generator.cpp
+CMakeFiles/sudoku.dir/src/generator.cpp.o: CMakeFiles/sudoku.dir/flags.make
+CMakeFiles/sudoku.dir/src/generator.cpp.o: ../src/generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sudoku.dir/src/generator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku.dir/src/generator.cpp.o -c /Users/apple/hello_world/Sudoku/src/generator.cpp
 
-CMakeFiles/sudoku.dir/generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/generator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/generator.cpp > CMakeFiles/sudoku.dir/generator.cpp.i
+CMakeFiles/sudoku.dir/src/generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku.dir/src/generator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/src/generator.cpp > CMakeFiles/sudoku.dir/src/generator.cpp.i
 
-CMakeFiles/sudoku.dir/generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/generator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/generator.cpp -o CMakeFiles/sudoku.dir/generator.cpp.s
+CMakeFiles/sudoku.dir/src/generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku.dir/src/generator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/src/generator.cpp -o CMakeFiles/sudoku.dir/src/generator.cpp.s
 
 # Object files for target sudoku
 sudoku_OBJECTS = \
-"CMakeFiles/sudoku.dir/main.cpp.o" \
-"CMakeFiles/sudoku.dir/generator.cpp.o"
+"CMakeFiles/sudoku.dir/src/main.cpp.o" \
+"CMakeFiles/sudoku.dir/src/generator.cpp.o"
 
 # External object files for target sudoku
 sudoku_EXTERNAL_OBJECTS =
 
-sudoku: CMakeFiles/sudoku.dir/main.cpp.o
-sudoku: CMakeFiles/sudoku.dir/generator.cpp.o
+sudoku: CMakeFiles/sudoku.dir/src/main.cpp.o
+sudoku: CMakeFiles/sudoku.dir/src/generator.cpp.o
 sudoku: CMakeFiles/sudoku.dir/build.make
 sudoku: CMakeFiles/sudoku.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sudoku"

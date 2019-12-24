@@ -1,6 +1,6 @@
 
 
-#include"generator.h"
+#include"../src/generator.h"
 static char buf[MAX];
 
 

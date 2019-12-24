@@ -1,38 +1,6 @@
 #include"generator.h"
 
 using namespace std;
-static int settle_flag = 0;
-
-int check(int m, int n) {
-    int i, j, k;
-    i = m;
-    j = n;
-    for (k = 0; k < 18; k += 2) {
-        //判断行是否满足
-        if (k != j) {
-            if (ques_board[i][j] == ques_board[i][k])return 0;
-        }
-        //判断列是否满足
-        if (k != i) {
-            if (ques_board[i][j] == ques_board[k][j])return 0;
-        }
-    }
-    if (m / 3 == 0)i = 0;
-    else if (m / 3 == 1)i = 3;
-    else
-        i = 6;
-    if (n / 6 == 0)j = 0;
-    else if (n / 6 == 1)j = 6;
-    else
-        j = 12;
-    //判断9个3*3是否满足
-    for (int c = i; c < i + 3; c++) {
-        for (int d = j; d < j + 6; d += 2) {
-            if (c != m && d != n && ques_board[m][n] == ques_board[c][d])return 0;
-        }
-    }
-    return 1;
-}
 
 
 void prune(int i, int j, bool point[10]) {
@@ -51,7 +19,6 @@ void prune(int i, int j, bool point[10]) {
     if (j / 6 == 0)n = 0;
     else if (j / 6 == 1)n = 6;
     else if (j / 6 == 2)n = 12;
-
     for (int c = m; c < m + 3; c++) {
         for (int d = n; d < n + 6; d += 2) {
             if (c != i && d != j && ques_board[c][d] != '0')point[ques_board[c][d] - '0'] = true;
@@ -62,31 +29,23 @@ void prune(int i, int j, bool point[10]) {
 
 void settle(int pos) {
     if (pos == 162) {
-        settle_flag = 1;
         return;
     }
     int i, j, k;
     i = pos / 18;
     j = pos % 18;
-
     bool point[10] = {false};
-
     if (ques_board[i][j] == '0') {
         prune(i, j, point);
         for (k = 1; k <= 9; k++) {
             if (point[k])
                 continue;
             ques_board[i][j] = (char) ('0' + k);
-            if (check(i, j)) {
-                settle(pos + 2);
-            }
-            if (settle_flag) { return; }
-            ques_board[i][j] = '0';//??
+            settle(pos + 2);
         }
     } else {
         settle(pos + 2);
     }
-    if (settle_flag) { return; }
 }
 
 
@@ -95,10 +54,13 @@ void settle_ques() {
     int total = 0, flag = 0;
     FILE *fpQues, *fpSolution;
     char strSolution[200];
-    if (AbsolutePath[0] == 0)
+    if (AbsolutePath[0] == 0){
         fpQues = fopen(QUESPATH, "r");
-    else
+    }
+    else {
+        cout<< "out2" << AbsolutePath << endl;
         fpQues = fopen(AbsolutePath, "r");
+    }
     fpSolution = fopen(SUDOKUPATH, "w");
     while (true) {
         for (int i = 0; i < 9; i++) {
@@ -106,7 +68,6 @@ void settle_ques() {
         }
         flag = fgetc(fpQues);//读取中间的空行，判断是否文件尾
         begin = (int) clock();
-        settle_flag = 0;
         settle(0);
         end = (int) clock();
         total += end - begin;
@@ -128,17 +89,22 @@ void settle_ques() {
     fclose(fpSolution);
 }
 
+void print_help(){
+    cout << "Usage:\n"
+         << "      sudoku -c number --> generate n sudoku finals. \n"
+         << "      sudoku -p number --> produce sudoku problem into the given path(prepare for the sudoku game)\n"
+         << "      sudoku -s path --> Read sudoku from file in the given path,and solve them.\n"
+         << "      sudoku -s 0 --> Read sudoku from ques.txt\n"
+         << "      The character should be itself:such as C is not equal to c.\n";
+}
 
 int main(int argc, char **argv) {
 
+
     if (argc != 3)//参数不等于3个
     {
-        cout << "Illegal parameter number\n"
-             << "Usage:\n"
-             << "      sudoku.exe -c number --> generate n sudoku finals. \n"
-             << "      sudoku.exe -s path --> Read sudoku from file in the given path,and solve them.\n"
-             << "      sudoku.exe -p number --> produce sudoku problem into the given path(prepare for the sudoku game)\n"
-             << "      The character should be itself:such as C is not equal to c.\n";
+        cout << "Illegal parameter number\n";
+        print_help();
         return 1;
     }
 

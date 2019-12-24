@@ -270,15 +270,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/apple/hello_world/Sudoku/generator.cpp">
-			<Option target="Unit"/>
-			<Option target="sudoku"/>
-		</Unit>
-		<Unit filename="/Users/apple/hello_world/Sudoku/generator.h">
-			<Option target="Unit"/>
-			<Option target="before"/>
-			<Option target="sudoku"/>
-		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/generator_origin.cpp">
 			<Option target="before"/>
 		</Unit>
@@ -288,11 +279,20 @@
 		<Unit filename="/Users/apple/hello_world/Sudoku/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/Users/apple/hello_world/Sudoku/main.cpp">
-			<Option target="sudoku"/>
-		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/main_origin.cpp">
 			<Option target="before"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/src/generator.cpp">
+			<Option target="Unit"/>
+			<Option target="sudoku"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/src/generator.h">
+			<Option target="Unit"/>
+			<Option target="before"/>
+			<Option target="sudoku"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/src/main.cpp">
+			<Option target="sudoku"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/test.cpp">
 			<Option target="Unit"/>

@@ -6,10 +6,10 @@ add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include .${gtest_SOURCE_DIR})
 
 add_executable(sudoku
-        main.cpp generator.h generator.cpp)
+        src/main.cpp src/generator.h src/generator.cpp)
 add_executable(before
-        generator.h generator_origin.cpp main_origin.cpp)
+        src/generator.h origin/generator_origin.cpp origin/main_origin.cpp)
 add_executable(Unit
-        test.cpp generator.h generator.cpp)
+        test/test.cpp src/generator.h src/generator.cpp)
 
 target_link_libraries(Unit gtest gtest_main)

@@ -70,29 +70,29 @@ CMakeFiles/Unit.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unit.dir/test.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/test.cpp -o CMakeFiles/Unit.dir/test.cpp.s
 
-CMakeFiles/Unit.dir/generator.cpp.o: CMakeFiles/Unit.dir/flags.make
-CMakeFiles/Unit.dir/generator.cpp.o: ../generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Unit.dir/generator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Unit.dir/generator.cpp.o -c /Users/apple/hello_world/Sudoku/generator.cpp
+CMakeFiles/Unit.dir/src/generator.cpp.o: CMakeFiles/Unit.dir/flags.make
+CMakeFiles/Unit.dir/src/generator.cpp.o: ../src/generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Unit.dir/src/generator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Unit.dir/src/generator.cpp.o -c /Users/apple/hello_world/Sudoku/src/generator.cpp
 
-CMakeFiles/Unit.dir/generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unit.dir/generator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/generator.cpp > CMakeFiles/Unit.dir/generator.cpp.i
+CMakeFiles/Unit.dir/src/generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unit.dir/src/generator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/src/generator.cpp > CMakeFiles/Unit.dir/src/generator.cpp.i
 
-CMakeFiles/Unit.dir/generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unit.dir/generator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/generator.cpp -o CMakeFiles/Unit.dir/generator.cpp.s
+CMakeFiles/Unit.dir/src/generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unit.dir/src/generator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/src/generator.cpp -o CMakeFiles/Unit.dir/src/generator.cpp.s
 
 # Object files for target Unit
 Unit_OBJECTS = \
 "CMakeFiles/Unit.dir/test.cpp.o" \
-"CMakeFiles/Unit.dir/generator.cpp.o"
+"CMakeFiles/Unit.dir/src/generator.cpp.o"
 
 # External object files for target Unit
 Unit_EXTERNAL_OBJECTS =
 
 Unit: CMakeFiles/Unit.dir/test.cpp.o
-Unit: CMakeFiles/Unit.dir/generator.cpp.o
+Unit: CMakeFiles/Unit.dir/src/generator.cpp.o
 Unit: CMakeFiles/Unit.dir/build.make
 Unit: lib/libgtest.a
 Unit: lib/libgtest_main.a

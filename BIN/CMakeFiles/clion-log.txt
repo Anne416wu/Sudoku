@@ -1,15 +1,4 @@
 "/Users/apple/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.5662.56/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /Users/apple/hello_world/Sudoku
-CMake Warning at googletest/CMakeLists.txt:54 (project):
-  VERSION keyword not followed by a value or was followed by a value that
-  expanded to nothing.
-
-
--- Found PythonInterp: /usr/bin/python (found version "2.7.16") 
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/apple/hello_world/Sudoku/BIN

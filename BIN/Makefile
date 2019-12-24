@@ -175,36 +175,6 @@ gtest/fast:
 	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-generator.o: generator.cpp.o
-
-.PHONY : generator.o
-
-# target to build an object file
-generator.cpp.o:
-	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.o
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.o
-.PHONY : generator.cpp.o
-
-generator.i: generator.cpp.i
-
-.PHONY : generator.i
-
-# target to preprocess a source file
-generator.cpp.i:
-	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.i
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.i
-.PHONY : generator.cpp.i
-
-generator.s: generator.cpp.s
-
-.PHONY : generator.s
-
-# target to generate assembly for a file
-generator.cpp.s:
-	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/generator.cpp.s
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/generator.cpp.s
-.PHONY : generator.cpp.s
-
 generator_origin.o: generator_origin.cpp.o
 
 .PHONY : generator_origin.o
@@ -232,33 +202,6 @@ generator_origin.cpp.s:
 	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/generator_origin.cpp.s
 .PHONY : generator_origin.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 main_origin.o: main_origin.cpp.o
 
 .PHONY : main_origin.o
@@ -285,6 +228,63 @@ main_origin.s: main_origin.cpp.s
 main_origin.cpp.s:
 	$(MAKE) -f CMakeFiles/before.dir/build.make CMakeFiles/before.dir/main_origin.cpp.s
 .PHONY : main_origin.cpp.s
+
+src/generator.o: src/generator.cpp.o
+
+.PHONY : src/generator.o
+
+# target to build an object file
+src/generator.cpp.o:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/src/generator.cpp.o
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/generator.cpp.o
+.PHONY : src/generator.cpp.o
+
+src/generator.i: src/generator.cpp.i
+
+.PHONY : src/generator.i
+
+# target to preprocess a source file
+src/generator.cpp.i:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/src/generator.cpp.i
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/generator.cpp.i
+.PHONY : src/generator.cpp.i
+
+src/generator.s: src/generator.cpp.s
+
+.PHONY : src/generator.s
+
+# target to generate assembly for a file
+src/generator.cpp.s:
+	$(MAKE) -f CMakeFiles/Unit.dir/build.make CMakeFiles/Unit.dir/src/generator.cpp.s
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/generator.cpp.s
+.PHONY : src/generator.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/sudoku.dir/build.make CMakeFiles/sudoku.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 test.o: test.cpp.o
 
@@ -326,18 +326,18 @@ help:
 	@echo "... sudoku"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... generator.o"
-	@echo "... generator.i"
-	@echo "... generator.s"
 	@echo "... generator_origin.o"
 	@echo "... generator_origin.i"
 	@echo "... generator_origin.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... main_origin.o"
 	@echo "... main_origin.i"
 	@echo "... main_origin.s"
+	@echo "... src/generator.o"
+	@echo "... src/generator.i"
+	@echo "... src/generator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
