@@ -57,18 +57,18 @@ include CMakeFiles/Unit.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Unit.dir/flags.make
 
-CMakeFiles/Unit.dir/test.cpp.o: CMakeFiles/Unit.dir/flags.make
-CMakeFiles/Unit.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Unit.dir/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Unit.dir/test.cpp.o -c /Users/apple/hello_world/Sudoku/test.cpp
+CMakeFiles/Unit.dir/test/test.cpp.o: CMakeFiles/Unit.dir/flags.make
+CMakeFiles/Unit.dir/test/test.cpp.o: ../test/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Unit.dir/test/test.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Unit.dir/test/test.cpp.o -c /Users/apple/hello_world/Sudoku/test/test.cpp
 
-CMakeFiles/Unit.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unit.dir/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/test.cpp > CMakeFiles/Unit.dir/test.cpp.i
+CMakeFiles/Unit.dir/test/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Unit.dir/test/test.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/test/test.cpp > CMakeFiles/Unit.dir/test/test.cpp.i
 
-CMakeFiles/Unit.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unit.dir/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/test.cpp -o CMakeFiles/Unit.dir/test.cpp.s
+CMakeFiles/Unit.dir/test/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Unit.dir/test/test.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/test/test.cpp -o CMakeFiles/Unit.dir/test/test.cpp.s
 
 CMakeFiles/Unit.dir/src/generator.cpp.o: CMakeFiles/Unit.dir/flags.make
 CMakeFiles/Unit.dir/src/generator.cpp.o: ../src/generator.cpp
@@ -85,13 +85,13 @@ CMakeFiles/Unit.dir/src/generator.cpp.s: cmake_force
 
 # Object files for target Unit
 Unit_OBJECTS = \
-"CMakeFiles/Unit.dir/test.cpp.o" \
+"CMakeFiles/Unit.dir/test/test.cpp.o" \
 "CMakeFiles/Unit.dir/src/generator.cpp.o"
 
 # External object files for target Unit
 Unit_EXTERNAL_OBJECTS =
 
-Unit: CMakeFiles/Unit.dir/test.cpp.o
+Unit: CMakeFiles/Unit.dir/test/test.cpp.o
 Unit: CMakeFiles/Unit.dir/src/generator.cpp.o
 Unit: CMakeFiles/Unit.dir/build.make
 Unit: lib/libgtest.a

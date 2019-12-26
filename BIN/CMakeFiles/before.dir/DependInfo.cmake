@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/apple/hello_world/Sudoku/generator_origin.cpp" "/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/before.dir/generator_origin.cpp.o"
-  "/Users/apple/hello_world/Sudoku/main_origin.cpp" "/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/before.dir/main_origin.cpp.o"
+  "/Users/apple/hello_world/Sudoku/origin/generator_origin.cpp" "/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/before.dir/origin/generator_origin.cpp.o"
+  "/Users/apple/hello_world/Sudoku/origin/main_origin.cpp" "/Users/apple/hello_world/Sudoku/BIN/CMakeFiles/before.dir/origin/main_origin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

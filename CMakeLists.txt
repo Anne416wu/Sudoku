@@ -11,5 +11,7 @@ add_executable(before
         src/generator.h origin/generator_origin.cpp origin/main_origin.cpp)
 add_executable(Unit
         test/test.cpp src/generator.h src/generator.cpp)
+add_executable(class
+        class/sudoku.h class/main.cpp)
 
 target_link_libraries(Unit gtest gtest_main)

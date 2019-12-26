@@ -63,7 +63,6 @@ void sudoku_generate(int n){
                     strcpy(buf + bit, final[pos2[j][k]]);
                     bit += 18;
                 }
-
                 strcpy(buf + bit, "\n");
                 bit++;
                 if (n == 1){
@@ -98,7 +97,6 @@ void ques_generate(int ques_num){
             fgets(ques_board[i], 20, fpBase1);
         }
         if(fgetc(fpBase1) == -1){
-            cout << "There is only "<<num<<" puzzles in sudoku.txt"<<endl;
             break;
         }
         //int base[9] = { 0,3,6,27,30,33,54,57,60 };

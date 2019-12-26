@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/before.dir/generator_origin.cpp.o"
-  "CMakeFiles/before.dir/main_origin.cpp.o"
+  "CMakeFiles/before.dir/origin/generator_origin.cpp.o"
+  "CMakeFiles/before.dir/origin/main_origin.cpp.o"
   "before"
   "before.pdb"
 )

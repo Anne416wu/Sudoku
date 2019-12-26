@@ -57,42 +57,42 @@ include CMakeFiles/before.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/before.dir/flags.make
 
-CMakeFiles/before.dir/generator_origin.cpp.o: CMakeFiles/before.dir/flags.make
-CMakeFiles/before.dir/generator_origin.cpp.o: ../generator_origin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/before.dir/generator_origin.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/before.dir/generator_origin.cpp.o -c /Users/apple/hello_world/Sudoku/generator_origin.cpp
+CMakeFiles/before.dir/origin/generator_origin.cpp.o: CMakeFiles/before.dir/flags.make
+CMakeFiles/before.dir/origin/generator_origin.cpp.o: ../origin/generator_origin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/before.dir/origin/generator_origin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/before.dir/origin/generator_origin.cpp.o -c /Users/apple/hello_world/Sudoku/origin/generator_origin.cpp
 
-CMakeFiles/before.dir/generator_origin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/before.dir/generator_origin.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/generator_origin.cpp > CMakeFiles/before.dir/generator_origin.cpp.i
+CMakeFiles/before.dir/origin/generator_origin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/before.dir/origin/generator_origin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/origin/generator_origin.cpp > CMakeFiles/before.dir/origin/generator_origin.cpp.i
 
-CMakeFiles/before.dir/generator_origin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/before.dir/generator_origin.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/generator_origin.cpp -o CMakeFiles/before.dir/generator_origin.cpp.s
+CMakeFiles/before.dir/origin/generator_origin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/before.dir/origin/generator_origin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/origin/generator_origin.cpp -o CMakeFiles/before.dir/origin/generator_origin.cpp.s
 
-CMakeFiles/before.dir/main_origin.cpp.o: CMakeFiles/before.dir/flags.make
-CMakeFiles/before.dir/main_origin.cpp.o: ../main_origin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/before.dir/main_origin.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/before.dir/main_origin.cpp.o -c /Users/apple/hello_world/Sudoku/main_origin.cpp
+CMakeFiles/before.dir/origin/main_origin.cpp.o: CMakeFiles/before.dir/flags.make
+CMakeFiles/before.dir/origin/main_origin.cpp.o: ../origin/main_origin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/before.dir/origin/main_origin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/before.dir/origin/main_origin.cpp.o -c /Users/apple/hello_world/Sudoku/origin/main_origin.cpp
 
-CMakeFiles/before.dir/main_origin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/before.dir/main_origin.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/main_origin.cpp > CMakeFiles/before.dir/main_origin.cpp.i
+CMakeFiles/before.dir/origin/main_origin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/before.dir/origin/main_origin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apple/hello_world/Sudoku/origin/main_origin.cpp > CMakeFiles/before.dir/origin/main_origin.cpp.i
 
-CMakeFiles/before.dir/main_origin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/before.dir/main_origin.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/main_origin.cpp -o CMakeFiles/before.dir/main_origin.cpp.s
+CMakeFiles/before.dir/origin/main_origin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/before.dir/origin/main_origin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apple/hello_world/Sudoku/origin/main_origin.cpp -o CMakeFiles/before.dir/origin/main_origin.cpp.s
 
 # Object files for target before
 before_OBJECTS = \
-"CMakeFiles/before.dir/generator_origin.cpp.o" \
-"CMakeFiles/before.dir/main_origin.cpp.o"
+"CMakeFiles/before.dir/origin/generator_origin.cpp.o" \
+"CMakeFiles/before.dir/origin/main_origin.cpp.o"
 
 # External object files for target before
 before_EXTERNAL_OBJECTS =
 
-before: CMakeFiles/before.dir/generator_origin.cpp.o
-before: CMakeFiles/before.dir/main_origin.cpp.o
+before: CMakeFiles/before.dir/origin/generator_origin.cpp.o
+before: CMakeFiles/before.dir/origin/main_origin.cpp.o
 before: CMakeFiles/before.dir/build.make
 before: CMakeFiles/before.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/apple/hello_world/Sudoku/BIN/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable before"

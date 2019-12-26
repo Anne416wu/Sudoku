@@ -27,6 +27,98 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="class">
+				<Option output="/Users/apple/hello_world/Sudoku/BIN/class" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
+					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 class"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="class/fast">
+				<Option output="/Users/apple/hello_world/Sudoku/BIN/class" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
+					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 class/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="before">
+				<Option output="/Users/apple/hello_world/Sudoku/BIN/before" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
+					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 before"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="before/fast">
+				<Option output="/Users/apple/hello_world/Sudoku/BIN/before" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
+					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 before/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
 				<Option type="4"/>
@@ -80,52 +172,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 Unit/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="before">
-				<Option output="/Users/apple/hello_world/Sudoku/BIN/before" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
-					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 before"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="before/fast">
-				<Option output="/Users/apple/hello_world/Sudoku/BIN/before" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/apple/hello_world/Sudoku/BIN"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/apple/hello_world/Sudoku/googletest/include"/>
-					<Add directory="/Users/apple/hello_world/Sudoku/./Users/apple/hello_world/Sudoku/googletest"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 before/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/apple/hello_world/Sudoku/BIN/Makefile&quot;  VERBOSE=1 clean"/>
@@ -270,8 +316,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/apple/hello_world/Sudoku/generator_origin.cpp">
-			<Option target="before"/>
+		<Unit filename="/Users/apple/hello_world/Sudoku/class/main.cpp">
+			<Option target="class"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/class/sudoku.cpp">
+			<Option target="class"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/class/sudoku.h">
+			<Option target="class"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
@@ -279,7 +331,10 @@
 		<Unit filename="/Users/apple/hello_world/Sudoku/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/Users/apple/hello_world/Sudoku/main_origin.cpp">
+		<Unit filename="/Users/apple/hello_world/Sudoku/origin/generator_origin.cpp">
+			<Option target="before"/>
+		</Unit>
+		<Unit filename="/Users/apple/hello_world/Sudoku/origin/main_origin.cpp">
 			<Option target="before"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/src/generator.cpp">
@@ -287,14 +342,14 @@
 			<Option target="sudoku"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/src/generator.h">
-			<Option target="Unit"/>
 			<Option target="before"/>
+			<Option target="Unit"/>
 			<Option target="sudoku"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/src/main.cpp">
 			<Option target="sudoku"/>
 		</Unit>
-		<Unit filename="/Users/apple/hello_world/Sudoku/test.cpp">
+		<Unit filename="/Users/apple/hello_world/Sudoku/test/test.cpp">
 			<Option target="Unit"/>
 		</Unit>
 		<Unit filename="/Users/apple/hello_world/Sudoku/CMakeLists.txt">
