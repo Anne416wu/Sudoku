@@ -1,0 +1,10 @@
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/sudoku.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/before.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/class.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/Unit.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/googletest/CMakeFiles/gtest.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/googletest/CMakeFiles/gtest_main.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/googletest/CMakeFiles/edit_cache.dir
+C:/Users/qinxuanwu/source/repos/Sudoku/out/build/x64-Debug/googletest/CMakeFiles/rebuild_cache.dir

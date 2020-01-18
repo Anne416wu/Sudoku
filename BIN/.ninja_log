@@ -1,0 +1,4 @@
+# ninja log v5
+8	778	601067070	CMakeFiles/sudoku.dir/src/generator.cpp.obj	3a18a22f2c1ae6c5
+1	790	601067070	CMakeFiles/sudoku.dir/src/main.cpp.obj	283c50ea5f3df4c
+802	1350	601067071	sudoku.exe	6556206d12b793a8
