@@ -5,7 +5,7 @@
 # 个人项目--数独
 
 > * 项目GitHub地址：https://github.com/Anne416wu/Sudoku
->
+> * [博客地址](https://blog.csdn.net/weixin_41844395/article/details/103663853)
 > * 预估PSP表格
 >
 > | PSP2.1                                | Personal Software Process Stages | 预估耗时（分钟） | 实际耗时（分钟） |
