@@ -5,51 +5,6 @@
 # 个人项目--数独
 
 > * 项目GitHub地址：https://github.com/Anne416wu/Sudoku
-> * [博客地址](https://blog.csdn.net/weixin_41844395/article/details/103663853)
+> * [博客地址](https://blog.csdn.net/weixin_41844395/article/details/103663853):https://blog.csdn.net/weixin_41844395/article/details/103663853
 > * 预估PSP表格
 >
-> | PSP2.1                                | Personal Software Process Stages | 预估耗时（分钟） | 实际耗时（分钟） |
-> | ------------------------------------- | -------------------------------- | ---------------- | ---------------- |
-> | **Planning**                          | **计划**                         |                  |                  |
-> | Estimate                              | 估计项目总共需要时间             |                  |                  |
-> | **Development**                       | **开发**                         |                  |                  |
-> | Analysis                              | 需求分析                         |                  |                  |
-> | Design Spec                           | 生成设计文档                     |                  |                  |
-> | Design Review                         | 设计复审                         |                  |                  |
-> | Coding Standard                       | 代码规范                         |                  |                  |
-> | Design                                | 具体设计                         |                  |                  |
-> | Coding                                | 编写代码                         |                  |                  |
-> | Code Review                           | 代码复审                         |                  |                  |
-> | Testing                               | 测试                             |                  |                  |
-> | **Reporting**                         | **报告**                         |                  |                  |
-> | Test Report                           | 测试报告                         |                  |                  |
-> | Size Measurement                      | 计算工作量                       |                  |                  |
-> | Postmortem & Process Improvement Plan | 事后总结，提出改进计划           |                  |                  |
-> |                                       | Sum                              |                  |                  |
->
-> * 需求：实现一个能够生成数独终局并且能求解数独问题的控制台程序
->   * 生成不重复的数独终局到文件
->   * 读取文件内的数独问题，求解并将结果输出到文件
->   * GUI界面
->     * 生成任意数量的数独题目并将初始数独棋局依次显示。初始数独棋盘需要挖空，99棋盘上挖空不少于30个，不多于60个。每个33的小棋盘中挖空不少于2个
->     * 用户可以在界面上通过点击或输入完成数独题目
->     * 用户完成数独题目后可以得到反馈，知道自己的题目是否正确
->
-> 
-
-## 思路描述
-
-## 设计实现过程：
-
-### 代码组织
-
-### 关键函数
-
-### 单元测试设计
-
-## 改进程序性能、性能分析图
-
-## 代码说明
-
-
-
